@@ -29,6 +29,7 @@ public class Ciudad {
 		this.id = id;
 		this.nombre = nombre;
 		this.estado = estado;
+		System.out.println("Mi super cambio");
 	}
 	
 	public Integer getId() {

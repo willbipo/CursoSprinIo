@@ -20,12 +20,16 @@ public class ClienteController {
 	
 	@RequestMapping(method=RequestMethod.GET)
 	public ResponseEntity<?> Clientes() {
+		System.out.println("Mi super cambio");
+
 		List<Cliente> lista = service.findAll();
 		return ResponseEntity.ok(lista);
 	}
 	
 	@RequestMapping(value="/{id}",method=RequestMethod.GET)
 	public ResponseEntity<?> findCliente(@PathVariable Integer id) {
+		System.out.println("Mi super cambio");
+
 		Cliente Cliente = service.find(id);
 		return ResponseEntity.ok(Cliente);
 	}
