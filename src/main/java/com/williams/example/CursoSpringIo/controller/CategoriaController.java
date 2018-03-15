@@ -27,6 +27,7 @@ public class CategoriaController {
 	
 	@RequestMapping(value="/{id}",method=RequestMethod.GET)
 	public ResponseEntity<?> findCategoria(@PathVariable Integer id) {
+		System.out.println("Mi super cambio2");
 		Categoria categoria = service.find(id);
 		return ResponseEntity.ok(categoria);
 	}
