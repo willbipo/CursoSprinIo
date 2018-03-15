@@ -20,6 +20,7 @@ public class CategoriaController {
 	
 	@RequestMapping(method=RequestMethod.GET)
 	public ResponseEntity<?> categorias() {
+		System.out.println("Mi super cambio");
 		List<Categoria> lista = service.findAll();
 		return ResponseEntity.ok(lista);
 	}
